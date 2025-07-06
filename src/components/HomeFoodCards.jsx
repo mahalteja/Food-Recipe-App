@@ -6,8 +6,8 @@ import useFoodCards from "../utlis/useFoodCards";
 
 const HomeFoodCards = () => {
   const { filters, loading: loadingFilters } = useFilterData()
-  const [activeFilter, setActiveFilter] = useState({ strCategory: "All" })
-  const { mealsData, loading: loadingMeals } = useFoodCards(activeFilter.strCategory)
+  const [activeFilter, setActiveFilter] = useState(null)
+  const { mealsData, loading: loadingMeals } = useFoodCards(activeFilter?.strCategory)
   const filtersShrimmer = Array(5).fill(0)
   const cardsShrimmer = Array(6).fill(0)
 
@@ -16,8 +16,8 @@ const HomeFoodCards = () => {
   };
 
   useEffect(() => {
-    if (filters.length > 1) {
-      setActiveFilter(filters[1])
+    if (filters.length > 0) {
+      setActiveFilter(filters[0])
     }
   }, [filters]);
   return (

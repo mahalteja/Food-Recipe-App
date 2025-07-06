@@ -28,7 +28,7 @@ const useFoodCards = (category) => {
 
   
   useEffect(() => {
-    if (!category || category === "All") { 
+    if (!category ) { 
       setMeals([])
       setLoading(false)
       return;

@@ -11,8 +11,7 @@ const useFilterData = () => {
       );
       const data = await response.json()
       if (data?.meals?.length) {
-        const all = [{ strCategory: "All" }, ...data.meals]
-        setFilters(all)
+        setFilters(data.meals)
       }
     } catch (err) {
       console.log("Error fetching categories:", err)
