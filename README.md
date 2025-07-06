@@ -1,12 +1,28 @@
-# React + Vite
+# 🍽️ Food Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic food recipe web app that allows users to explore, filter, and search meals. It includes a voice assistant feature for voice-based search input.
 
-Currently, two official plugins are available:
+**Live Demo**: [https://food-recipe-app-one-wheat.vercel.app/](https://food-recipe-app-one-wheat.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- ✅ Browse meals by **category**
+- 🔍 **Search** meals by name
+- 🎤 Voice-based search via **Web Speech API**
+- 🌀 Loading placeholders with shimmer effect
+- 📱 Fully **responsive** and mobile-friendly UI
+- ⚡ Optimized with **custom hooks** and **memoization**
+- 🚫 Graceful fallback for empty states (e.g., "No results found")
+
+---
+## 📦 Tech Stack
+
+- **React.js** (with functional components + hooks)
+- **React Router** for routing (`/` and `/search?q=...`)
+- **HTML/CSS** (custom styling with media queries)
+- **Vercel** for deployment
+
+---
