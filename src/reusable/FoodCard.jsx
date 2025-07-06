@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/FoodCard.css";
+import { IMAGES } from "../utlis/images";
 
 const FoodCard = ({ idMeal, strMeal, strMealThumb }) => {
 
@@ -19,7 +20,14 @@ const FoodCard = ({ idMeal, strMeal, strMealThumb }) => {
         `,
       }}
     >
+      <div className="rating-container">
+        <img src={IMAGES.STAR} alt="Star" className="star" />
+        <p className="rating">4.0</p>
+      </div>
+      <div className="card-content">
       <p className="food-card-heading">{reduceText(strMeal,40)}</p>
+      <p className="food-card-body">By Chef John</p>
+      </div>
     </div>
   );
 };

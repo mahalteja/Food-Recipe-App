@@ -9,24 +9,77 @@
   padding: 16px;
   border-radius: 18px;
   font-weight: bold;
+  position: relative;
 }
 
 .food-card-heading {
-  color:  #fff;
+  color: #fff;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.food-card-body {
+  color: #a9a9a9;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rating-container {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 20px;
+  background: #ffe1b3;
+  position:absolute;
+  top: 16px;
+  right: 16px;
+}
+.rating {
+  color: #000;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-@media (max-width:600px) {
+.star{
+  width: 16px;
+  height: 16px;
+}
 
-  .food-card{
+@media (max-width: 600px) {
+  .food-card {
     width: 150px;
     height: 150px;
+    padding: 12px 8px;
   }
-  .food-card-heading{
-    font-size: 16px;
+  .food-card-heading {
+    font-size: 12px;
+  }
+  .food-card-body {
+    font-size: 10px;
+  }
+  .star{
+    width: 8px;
+    height: 8px;
+  }
+  .rating{
+    font-size: 10px;
+  }
+  .rating-container {
+    top: 12px;
+    right: 8px;
   }
 }
