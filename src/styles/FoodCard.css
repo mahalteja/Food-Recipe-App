@@ -1,0 +1,32 @@
+.food-card {
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+.food-card-heading {
+  color:  #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (max-width:600px) {
+
+  .food-card{
+    width: 150px;
+    height: 150px;
+  }
+  .food-card-heading{
+    font-size: 16px;
+  }
+}

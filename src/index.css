@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.primary-btn {
+  background-color: #129575;
+  font-family: Poppins;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.outlet{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 64px;
+}
+
+
+
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.filter-shimmer {
+  width: 100px;
+  height: 38px;
+  margin: 0 8px 10px 0;
+  display: inline-block;
+}
+
+.card-shimmer {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+
+@media (max-width:600px) {
+  .outlet{
+    padding: 16px 24px;
+  }
+  .card-shimmer{
+    width: 150px;
+    height: 150px;
+  }
+}
